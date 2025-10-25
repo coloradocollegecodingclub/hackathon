@@ -1,0 +1,41 @@
+body {
+    background-color: #FFB71B;
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(45 200 200)'%3E%3Cpath d='M0 50 Q50 30 100 50 T200 50 T300 50 T400 50 L400 90 Q350 110 300 90 T200 90 T100 90 T0 90 Z M0 120 Q40 100 80 120 T160 120 T240 120 T320 120 T400 120 L400 155 Q360 175 320 155 T240 155 T160 155 T80 155 T0 155 Z M0 185 Q60 165 120 185 T240 185 T360 185 T400 185 L400 225 Q340 245 280 225 T200 225 T120 225 T40 225 T0 225 Z M0 255 Q45 235 90 255 T180 255 T270 255 T360 255 T400 255 L400 295 Q355 315 310 295 T220 295 T130 295 T40 295 T0 295 Z M0 325 Q55 305 110 325 T220 325 T330 325 T400 325 L400 365 Q345 385 290 365 T180 365 T70 365 T0 365 Z M0 395 Q50 375 100 395 T200 395 T300 395 T400 395 L400 400 L0 400 Z' fill='%23000000'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 1800px 1300px;
+    background-position: -300px -300px;
+    min-height: 100vh;
+}
+
+.content-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.tiger-gold {
+    color: #FFB71B;
+}
+
+.cc-black {
+    color: #000000;
+}
+
+.bg-tiger-gold {
+    background-color: #FFB71B;
+}
+
+.bg-cc-black {
+    background-color: #000000;
+}
+
+.border-tiger-gold {
+    border-color: #FFB71B;
+}
+
+.border-cc-black {
+    border-color: #000000;
+}
+
+.hover-tiger-gold:hover {
+    background-color: #FFB71B;
+    color: #000000;
+}
