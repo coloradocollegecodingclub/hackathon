@@ -31,6 +31,7 @@
                     is your oyster!
                 </p>
             </div>
+        </section>
 
             <!-- ABOUT Section, Middle Column -->
             <div class="about-column">
@@ -176,4 +177,26 @@ document.querySelectorAll('.faq-item').forEach(item => {
     <footer class="footer">Made with ❤️ by the Colorado College Coding Club © 2025</footer>
 
 </body>
+  <script>
+    // Fade in space background
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.body.classList.add('space-tiger-bg');
+      }, 2000);
+
+      // Create floating purple tigers
+      const tigerContainer = document.getElementById('tigers');
+      const tigerCount = 12;
+      for (let i = 0; i < tigerCount; i++) {
+        const tiger = document.createElement('div');
+        tiger.textContent = '🐯';
+        tiger.classList.add('tiger');
+        tiger.style.left = Math.random() * 100 + '%';
+        tiger.style.top = Math.random() * 100 + '%';
+        tiger.style.fontSize = (Math.random() * 40 + 30) + 'px';
+        tiger.style.animationDuration = (Math.random() * 6 + 4) + 's';
+        tigerContainer.appendChild(tiger);
+      }
+    });
+  </script>
 </html>
