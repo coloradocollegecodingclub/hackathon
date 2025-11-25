@@ -1,77 +1,291 @@
-.content-card {
-background-color: rgba(26, 0, 51, 0.7);
-backdrop-filter: blur(10px);
-border-color: rgba(180, 0, 255, 0.5) !important;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =====================
+   LANDING Section!
+===================== */
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.tiger-gold {
-color: #FFB71B;
+.landing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cc-black {
-color: #FFFFFF;
-}
-
-.bg-tiger-gold {
-background-color: #FFB71B;
-}
-
-.bg-cc-black {
-background-color: #000000;
-}
-
-.border-tiger-gold {
-border-color: #FFB71B;
-}
-
-.border-cc-black {
-border-color: #000000;
-}
-
-.hover-tiger-gold:hover {
-background-color: #FFB71B;
-color: #000000;
-}
-
-body {
-    background-color: black;
-    transition: background 3s ease-in-out;
-}
-
-.space-tiger-bg {
-    background:
-    radial-gradient(1200px 600px at 20% -10%, rgba(180, 0, 255, 0.15), transparent 60%),
-    radial-gradient(1000px 600px at 120% 10%, rgba(150, 0, 200, 0.1), transparent 60%),
-    linear-gradient(#0b0019 0%, #1a0033 50%, #000 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@keyframes bounce-slow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
-}
-@keyframes bounce-slower {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-50px); }
-}
-.animate-bounce-slow {
-    animation: bounce-slow 6s infinite ease-in-out;
-}
-.animate-bounce-slower {
-    animation: bounce-slower 10s infinite ease-in-out;
-}
-
-/* Floating tiger animation */
-@keyframes float-tiger {
-    0% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(10deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-}
-
-.tiger {
+/* Register Button -> Handshake Register Form Link */
+.register-btn {
     position: absolute;
-    animation: float-tiger 6s ease-in-out infinite;
-    opacity: 0.8;
-    filter: drop-shadow(0 0 15px rgba(180, 0, 255, 0.8));
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #E07E2E;
+    color: white;
+    padding: 30px 50px;
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.register-btn:hover {
+    background: #e05a48;
+}
+
+
+/* =====================
+   ABOUT Section!
+===================== */
+.about {
+    width: 100vw;
+    min-height: 100vh;
+    background: url("images/tigerHaCCs_one.svg") center top no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+    gap: 30px;
+    font-family: 'Chewy', cursive;
+    position: relative;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
+
+.about-label {
+    background: #F3715A;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.about-title {
+    font-size: 3rem;
+    color: #EFE1D3;
+    text-align: center;
+    z-index: 1;
+}
+
+.highlight-cc {
+    color: #FFB71B;
+}
+
+.about-columns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.about-column {
+    flex: 1;
+    min-width: 250px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    line-height: 2;
+}
+
+/* =====================
+   THEMES Section!
+===================== */
+.themes {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/tigerHaCCs_two.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+}
+
+.themes-box {
+    background: rgba(55, 94, 106, 0.55);
+    padding: 50px 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    position: relative;
+}
+
+.themes .section-label {
+    background: #F3715A;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.themes .section-title {
+    font-size: 3rem;
+    color: #EFE1D3;
+    margin-bottom: 20px;
+}
+
+.themes .section-description {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+/* =====================
+   FAQs Section!
+===================== */
+.faqs {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('images/tigerHaCCs_three.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 600px 20px 80px 20px;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.faqs .section-label {
+    background: #F3715A;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.faqs .section-title {
+    font-size: 3rem;
+    color: #5F3E23;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* =====================
+   SPONSORS Section!
+===================== */
+.sponsors {
+    width: 100vw;
+    min-height: auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chewy', cursive;
+    background: #483e37;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.sponsors .section-label {
+    background: #F3715A;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.sponsors .section-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* =====================
+   FOOTER Section!
+===================== */
+.footer {
+    width: 100vw;
+    padding: 30px 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    font-size: 1rem;
 }
