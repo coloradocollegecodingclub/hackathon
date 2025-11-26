@@ -93,7 +93,7 @@
 }
 
 .highlight-cc {
-    color: #FFB71B;
+    color: #FFB71B;  
 }
 
 .about-columns {
@@ -142,7 +142,7 @@
     padding: 50px 40px;
     border-radius: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(6px);
     z-index: 2;
@@ -204,7 +204,7 @@
 
 .faqs .section-title {
     font-size: 3rem;
-    color: #5F3E23;
+    color: #714E67;
     margin-bottom: 40px;
 }
 
