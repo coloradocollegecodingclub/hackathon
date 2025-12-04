@@ -26,30 +26,22 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
-.landing-img.mobile {
-    display: none;
-}
-
+/* Mobile responsive for landing image */
 @media (max-width: 768px) {
-    .landing-img.desktop {
-        display: none;
+    .landing {
+        min-height: 100vh;
     }
 
-    .landing-img.mobile {
-        display: block;
+    .landing-img {
+        object-fit: cover;
+        object-position: center;
+        min-height: 100vh;
     }
 }
 
-.register-btn {
-    position: relative;
-    z-index: 10;
-}
-
+/* Register Button -> Handshake Register Form Link */
 .register-btn {
     position: absolute;
     top: 75%;
@@ -74,7 +66,6 @@ body {
 /* Mobile responsive for register button */
 @media (max-width: 768px) {
     .register-btn {
-        top: 60%;
         padding: 20px 35px;
         font-size: 1.5rem;
         width: auto;
@@ -85,7 +76,6 @@ body {
 
 @media (max-width: 480px) {
     .register-btn {
-        top: 55%;
         padding: 15px 25px;
         font-size: 1.3rem;
         max-width: 85%;
