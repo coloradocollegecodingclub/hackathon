@@ -203,40 +203,53 @@ document.querySelectorAll('.faq-item').forEach(item => {
 
 </script>
 
-
-    <!-- SPONSORS Section -->
-    <section class="sponsors">
-        <div class="section-label">SPONSORS</div>
-        <p class="section-description">
-            A round of applause to our sponsors, who make all of this possible:
-            City of Colorado Springs, Department of Mathematics & Computer Science,
-            Career Center, Coding Club, and CCSGA.  
-    </section>
-
-    <!-- FOOTER Section -->
-    <footer class="footer">Made with ❤️ by the Colorado College Coding Club © 2025</footer>
-
-</body>
-  <script>
-    // Fade in space background
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.body.classList.add('space-tiger-bg');
-      }, 2000);
-
-      // Create floating purple tigers
-      const tigerContainer = document.getElementById('tigers');
-      const tigerCount = 12;
-      for (let i = 0; i < tigerCount; i++) {
-        const tiger = document.createElement('div');
-        tiger.textContent = '🐯';
-        tiger.classList.add('tiger');
-        tiger.style.left = Math.random() * 100 + '%';
-        tiger.style.top = Math.random() * 100 + '%';
-        tiger.style.fontSize = (Math.random() * 40 + 30) + 'px';
-        tiger.style.animationDuration = (Math.random() * 6 + 4) + 's';
-        tigerContainer.appendChild(tiger);
-      }
-    });
-  </script>
-</html>
+<!-- SPONSORS Section -->
+<section class="sponsors">
+    <div class="section-label">SPONSORS</div>
+    <p class="section-description">
+      Thank you to our amazing sponsors who make TigerHaCCs possible!
+    </p>
+  
+    <div class="sponsor-grid">
+      <div class="sponsor-card">
+        <a href="https://coloradosprings.gov/" target="_blank" aria-label="City of Colorado Springs">
+          <img src="images/logo/cos-logo.svg" alt="City of Colorado Springs" class="sponsor-logo">
+          <span class="sponsor-tooltip">Visit City of Colorado Springs</span>
+        </a>
+      </div>
+  
+      <div class="sponsor-card">
+        <a href="https://fshtechnologies.org/" target="_blank" aria-label="FSH Technologies">
+          <img src="images/logo/fsh-logo.svg" alt="FSH Technologies" class="sponsor-logo">
+          <span class="sponsor-tooltip">Visit FSH Technologies</span>
+        </a>
+      </div>
+  
+      <div class="sponsor-card">
+        <a href="https://www.coloradocollege.edu/offices/careercenter/" target="_blank" aria-label="Career Center">
+          <img src="images/logo/career-center-logo.svg" alt="Career Center" class="sponsor-logo">
+          <span class="sponsor-tooltip">Visit Career Center</span>
+        </a>
+      </div>
+  
+      <div class="sponsor-card">
+        <a href="https://www.coloradocollege.edu/academics/dept/mathcs/" target="_blank" aria-label="Math & CS Dept">
+          <img src="images/logo/math-cs-logo.svg" alt="Math & CS Dept" class="sponsor-logo">
+          <span class="sponsor-tooltip">Visit Math & CS Dept</span>
+        </a>
+      </div>
+  
+      <div class="sponsor-card">
+        <a href="https://www.coloradocollege.edu/other/ccsga/" target="_blank" aria-label="CCSGA">
+          <img src="images/logo/ccsga-logo.png" alt="CCSGA" class="sponsor-logo">
+          <span class="sponsor-tooltip">Visit CCSGA</span>
+        </a>
+      </div>
+    </div>
+</section>
+  
+<!-- FOOTER Section -->
+<footer class="footer">
+    Made with ❤️ by the Colorado College Coding Club © 2025
+</footer>
+  
